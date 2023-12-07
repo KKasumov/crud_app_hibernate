@@ -29,10 +29,6 @@ public class Writer {
     @OneToMany(mappedBy = "writer", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Post> posts = new ArrayList<>();
 
-    public Writer(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
 
     public Writer(Long id, String firstName, String lastName) {
         this.id = id;
